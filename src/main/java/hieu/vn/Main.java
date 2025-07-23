@@ -9,7 +9,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-         /* Chinh sua tren server github */
         CacheTTL<Integer, List<Integer>> ttlCache = new CacheTTL<>(20, 10); // TTL: 20s, Idle: 10s
         PrimeCache guavaCache = new PrimeCache();
 
@@ -31,7 +30,6 @@ public class Main {
 
             return new Gson().toJson(primes);
         });
-         /* Chinh sua tren server may client */
         // Đường dẫn dùng Guava cache
         get("/prime/guava", (req, res) -> {
             res.type("application/json");
