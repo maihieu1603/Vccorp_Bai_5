@@ -30,7 +30,7 @@ public class Main {
 
             return new Gson().toJson(primes);
         });
-
+         /* Chinh sua tren server may client */
         // Đường dẫn dùng Guava cache
         get("/prime/guava", (req, res) -> {
             res.type("application/json");
