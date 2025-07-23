@@ -13,7 +13,7 @@ public class Main {
         PrimeCache guavaCache = new PrimeCache();
 
         port(8080);
-         /* Chinh sua tren server may client */
+        /* Chinh sua hop nhat giua server & client */
         // Đường dẫn dùng CacheTTL tự viết
         get("/prime/ttl", (req, res) -> {
             res.type("application/json");
